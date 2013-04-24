@@ -1,0 +1,30 @@
+{
+	"name": "360-round-slider",
+	"title": "360 Degrees Round Slider",
+	"description": "360 Degrees Round Slider is a jQuery plugin that lets users select a value by moving a slider thumb by rotating it 360 degrees.",
+	"keywords": [
+		"aaa"
+	],
+	"version": "1.0.48",
+	"author": {
+		"name": "no81no",
+		"url": "http://no81no.com"
+	},	
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://opensource.org/licenses/MIT"
+		},
+		{
+			"type": "GNU General Public License (GPL) Version 2",
+			"url": "http://www.gnu.org/licenses/gpl-2.0.html"
+		}
+	],
+	"bugs": "https://github.com/no81no/360-round-slider/issues",
+	"homepage": "http://no81no.com/360-round-slider/overview",
+	"docs": "http://no81no.com/360-round-slider/usage",
+	"download": "http://no81no.com/360-round-slider/download",
+	"dependencies": {
+		"jquery": ">=1.5"
+	}
+}

@@ -1,0 +1,89 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: 'georgia';
+	font-size: 14px;
+}
+
+body{
+	background-color: #ccc;
+}
+
+
+.box{
+	float: left;
+	width: 100%;
+}
+
+.center{
+	width: 1150px;
+	margin: 0 auto;
+}
+
+#wrapper{
+	background-color: #fff;
+	border: 1px solid #aaa;
+	margin: 20px 0 40px 0;
+	
+	border-radius: 3px;
+	-webkit-box-shadow:0 0 7px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 0 7px rgba(0,0,0,0.3);
+	-o-box-shadow:0 0 7px rgba(0,0,0,0.3);
+	box-shadow:0 0 7px rgba(0,0,0,0.3);
+}
+
+#content{
+	float: left;
+	clear: both;
+	margin: 40px 40px 20px 40px;
+}
+
+p.title{
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	font-size: 20px;
+}
+
+p.name{
+	font-size: 16px;
+	color: #875c09;
+}
+
+.desc{
+	float: left;
+	width: 510px;
+	margin: 0 0 0 50px;
+	line-height: 24px;
+}
+
+.dotted{
+	border-bottom: 1px dotted #aaa;
+	margin: 0 0 30px 0;
+	padding: 0 0 30px 0;
+}
+
+.left{
+	float: left;
+	background: #ddd url('../img/preview-bg.png') repeat-y;
+	width: 400px;
+	height: 250px;
+}
+
+.right{
+	float: left;
+	width: 400px;
+	height: 250px;
+	margin: 0 0 0 50px;
+	background: #fff;
+}
+
+.demo .round-slider{
+	margin: 25px auto 0 auto;
+}
+
+#compass input,
+#seconds input{
+	color: #fff;
+	font-size: 11px;
+}

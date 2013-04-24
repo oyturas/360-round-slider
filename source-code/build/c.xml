@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<project basedir="." default="round-slider" name="round-slider compilation">
+
+	<!-- versions properties -->
+	<property name="major" value="1"/>
+	<property name="minor" value="0"/>
+	
+	<!-- properties -->
+	<property name="compiler_folder" value="../../../../../compilers/js"/>
+	<property name="source_code_folder" value=".."/>
+	<property name="main_output_folder" value="../../demo/js"/>
+	
+	<!-- google closure compiler task definition -->
+	<taskdef 
+		name="jscomp" 
+		classname="com.google.javascript.jscomp.ant.CompileTask"
+        classpath="${compiler_folder}/compiler.jar"/>
+	
+	<!-- default target: compile round-slider -->
+	<target name="round-slider">
+	
+		<!-- build auto version -->
+		<buildnumber file="revision.txt"/>
+		
+		<delete file="${main_output_folder}/round-slider.min.js"/>
+		
+		<!-- compiler options -->
+		<jscomp 
+			compilationLevel="simple" 
+			warning="verbose"
+            debug="false" 
+			output="${main_output_folder}/round-slider.min.js">
+
+			<!-- extern files -->
+			<externs dir="${compiler_folder}">
+				<file name="jquery-1.7.externs.js"/>
+			</externs>
+			
+			<!-- source files -->
+			<sources dir="${source_code_folder}">
+				<file name="round-slider.js"/>
+			</sources>
+			
+			<sources dir="${source_code_folder}/blocks">
+				<file name="circle.js"/>	
+				<file name="container.js"/>
+				<file name="drag.js"/>	
+				<file name="movement.js"/>
+				<file name="point.js"/>
+			</sources>
+		</jscomp>
+		<!-- end of compiler options -->
+		
+		<!-- replace version in round-slider.js -->
+		<replace 
+			file="${main_output_folder}/round-slider.min.js" 
+			token="##VERSION##" 
+			value="${major}.${minor}.${build.number}" 
+		/>
+		
+		<!-- create version file -->
+		<touch file="version.txt"/> 
+		<echo file="version.txt">${major}.${minor}.${build.number}</echo> 
+
+	</target>
+</project>
