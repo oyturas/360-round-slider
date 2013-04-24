@@ -3,7 +3,15 @@
 	"title": "360 Degrees Round Slider",
 	"description": "360 Degrees Round Slider is a jQuery plugin that lets users select a value by moving a slider thumb by rotating it 360 degrees.",
 	"keywords": [
-		"aaa"
+		"slider"
+		,"round"
+		,"360"
+		,"degrees"
+		,"radians"
+		,"rotate"
+		,"rotating"
+		,"measure"
+		,"units"
 	],
 	"version": "1.0.48",
 	"author": {
